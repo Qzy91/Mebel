@@ -13,45 +13,134 @@
 
 	<header>
 		<nav class="fixed-top navbar navbar-expand-lg navbar-light">
-			<div class="container">
-				<a class="logo" href="#"><img src="./../img/logo.png"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item px-2">
-							<a class="nav-link" href="./..//index.html">Главная</a>
-						</li>
-						<li class="nav-item px-2">
-							<a class="nav-link" href="./..//works.html">Наши работы</a>
-						</li>
-						<li class="nav-item px-2">
-							<a class="nav-link" href="./..//catalog.html">каталог</a>
-						</li>
-						<li class="nav-item px-2">
-							<a class="nav-link" href="./..//aboutus.html">о нас</a>
-						</li>
-						<li class="nav-item px-2">
-							<a class="nav-link" href="./..//contact.html">контакты</a>
-						</li>
-					</ul>
+			<div class="container ">
+				<div class="nav-row">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class=" nav-flex">
+					<a class="logo" href="#"><img src="./../img/logo.png"></a>
+					
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item px-2">
+								<a class="nav-link" href="./..//index.html">Главная</a>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link" href="./..//works.html">Наши работы</a>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link" href="./..//catalog.html">каталог</a>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link" href="./..//aboutus.html">о нас</a>
+							</li>
+						</ul>
+					</div>
+					<div class="d-flex menu__social">
+						<div class="d-flex align-items-center px-3 color--menu">
+							<div><a class="menu__tel" >096 - 567 - 489 -54</a></div>
+						</div>
+						<div class="d-flex align-items-center px-3 color--menu">
+							<div><i class="fab fa-viber"></i></div>
+							<div><i class="fab fa-telegram-plane"></i></div>
+							<div><i class="fab fa-instagram"></i></div>
+						</div>
+					</div>
 				</div>
-				<div class="d-flex menu__social">
-					<div class="d-flex align-items-center px-3 color--menu">
-						<div><a class="menu__tel" >096 - 567 - 489 -54</a></div>
-					</div>
-					<div class="d-flex align-items-center px-3 color--menu">
-						<div><i class="fab fa-viber"></i></div>
-						<div><i class="fab fa-telegram-plane"></i></div>
-						<div><i class="fab fa-instagram"></i></div>
-					</div>
+					
 				</div>
 			</div>
 		</nav>
 	</header>
 	<main>
+
 		<section class="product">
+		    <div class="container">
+		        <div class="subtitle">
+		            <span>
+		                <div class="global__subtitle__text">консоль пристенная</div>
+		            </span>
+		        </div>
+		
+		        <div class="product__flex">
+		            <div class="product__way">
+		                <div class="product__way__link"><a href="./index.html">главная</a></div>
+		                <div class="product__way__link">/</a></div>
+		                <div class="product__way__link"><a href="./catalog.html">каталог</a></div>
+		                <div class="product__way__link">/</div>
+		                <div class="product__way__link product__way__link__active"><a>консоль</a></div>
+		            </div>
+		            <div class="product__info">
+		                <div class="product__info__foto">
+		                    <div class="product__info__foto__col"  id="product__info__foto__col">
+		                            <a class="product__info__foto__col__img__small"  href="./img/products/1/1.jpeg">
+		                                <img class="product__info__foto__col__img__small__img" src="./img/products/1/1.jpeg" alt="">
+		                                <div class="product__info__foto__col__img__small__shadow" data-id="1"></div>
+		                            </a>
+		                            <a class="product__info__foto__col__img__small" href="./img/products/1/pruduct_1_1.jpeg">
+		                                <img class="product__info__foto__col__img__small__img" src="./img/products/1/pruduct_1_2.jpeg" alt="">
+		                                <div class="product__info__foto__col__img__small__shadow shadow" data-id="2"></div>
+		                            </a>
+		                            <a class="product__info__foto__col__img__small" href="./img/products/1/3.jpeg">
+		                                <img class="product__info__foto__col__img__small__img" src="./img/products/1/3.jpeg" alt="">
+		                                <div class="product__info__foto__col__img__small__shadow shadow" data-id="3"></div>
+		                            </a>
+		                    </div>
+		                    <div class="product__info__foto__preview">
+		                        <a class="product__info__foto__col__img__preview" id="">
+		                            <img class="product__info__foto__col__img__img"  id="product__info__foto__col__preview" src="./img/products/1/1.jpeg" alt="">
+		                        </a>
+		                    </div>
+		                </div>
+		                <div class="product__info__discription">
+		                    <div class="product__info__discription__wrapper">
+		                        <div class="product__info__discription__title">консоль пристенная</div>
+		                        <div class="product__info__discription__item">
+		                            <div class="product__info__discription__item__title">материал:</div>
+		                            <div class="product__info__discription__item__value">дерево /ольха/ ясень</div>
+		                        </div>
+		                        <div class="product__info__discription__item">
+		                            <div class="product__info__discription__item__title">длина:</div>
+		                            <div class="product__info__discription__item__value">110 </div>
+		                        </div>
+		                        <div class="product__info__discription__item">
+		                            <div class="product__info__discription__item__title">ширена:</div>
+		                            <div class="product__info__discription__item__value">80</div>
+		                        </div>
+		                        <div class="product__info__discription__item">
+		                            <div class="product__info__discription__item__title">Высота:</div>
+		                            <div class="product__info__discription__item__value">120</div>
+		                        </div>
+		                        <div class="product__info__discription__item">
+		                            <div class="product__info__discription__item__title">покрытие:</div>
+		                            <div class="product__info__discription__item__value">масловоск</div>
+		                        </div>
+		                        <div class="product__info__discription__item">
+		                            <div class="product__info__discription__item__title">Цвет:</div>
+		                            <div class="product__info__discription__item__value">коричневый / белый</div>
+		                        </div>
+		                    </div>
+		                    <div class="product__info__discription__price">
+		                        <div class="product__info__discription__price__title">Цена от: </div>
+		                        <div class="product__info__discription__price__number"> 10 700</div>
+		                        <div class="product__info__discription__price__title"> грн.</div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        
+		        <div class="product__big-description">
+		            <div class="product__big-description__title">Описание</div>
+		            <div class="product__big-description__text">Консоль из данной коллекции используют белый цвет и стиль, который отлично вписывается в любой интерьер. Дерево из которого выполнен столик обеспечит прекрасный внешний вид, долговечность и первозданное состояние.
+		                Данная консоль будет выгодной покупкой, которая украсит вашу комнату, подарит богатый внешний вид и гордость за выгодную покупку – для этого свяжитесь с нами любым доступным способом.
+		                Любая модель мебели из нашего каталога изготавливается индивидуально, по вашим замерам. В изделиях не используется ДСП!
+		                </div>
+		        </div>
+		    </div>
+		</section>
+
+		<!-- <section class="product">
 			<div class="container">
 				<div class="subtitle">
 					<span>
@@ -61,20 +150,20 @@
 
 				<div class="product__flex">
 					<div class="product__way">
-						<div class="product__way__link"><a>главная</a></div>
+						<div class="product__way__link"><a href="./index.html">главная</a></div>
 						<div class="product__way__link">/</a></div>
-						<div class="product__way__link"><a>каталог</a></div>
+						<div class="product__way__link"><a href="./catalog.html">каталог</a></div>
 						<div class="product__way__link">/</div>
 						<div class="product__way__link product__way__link__active"><a>консоль</a></div>
 					</div>
 					<div class="product__info">
 						<div class="product__info__foto">
 							<div class="product__info__foto__col"  id="product__info__foto__col">
-									<a class="product__info__foto__col__img" >
-										<img class="product__info__foto__col__img__img" src="./img/Rectangle 21.png" alt="">
+									<a class="product__info__foto__col__img"  href="./img/products/1/pruduct_1_1.jpeg">
+										<img class="product__info__foto__col__img__img" src="./img/products/1/pruduct_1_1.jpeg" alt="">
 										<div class="product__info__foto__col__img__shadow"></div>
 									</a>
-									<a class="product__info__foto__col__img" href="./img/products/1/pruduct_1_2.jpeg">
+									<a class="product__info__foto__col__img" href="./img/products/1/pruduct_1_1.jpeg">
 										<img src="./img/products/1/pruduct_1_2.jpeg" alt="">
 										<div class="product__info__foto__col__img__shadow"></div>
 									</a>
@@ -134,7 +223,7 @@
 						</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 	</main>
 
@@ -160,9 +249,8 @@
     </div>
 </section>
 
-<div class="product__line"></div>
 <footer class="footer" id="contact">
-        <div class="footer__line"></div>
+        <!-- <div class="footer__line"></div> -->
         <div class="container">
         <div class="footer__row">
             <div class="footer__row__links">
@@ -192,17 +280,18 @@
                         <div class="footer__row__links__col__info__title">режим работы</div>
                         <div class="footer__row__links__col__info__item">С 9:00 - 20:00</div>
                     </div>
-                    <div class="footer__row__links__col__info">
-                        <div class="footer__row__links__col__info__title">мы в социальных сетях</div>
-                        <div class="footer__row__links__col__info__social">
-                            <div class="footer__row__links__col__info__social__item"><a href=""><i class="fab fa-viber"></i></a></div>
-                            <div class="footer__row__links__col__info__social__item"><a href=""><i class="fab fa-telegram-plane"></i></a></div>
-                            <div class="footer__row__links__col__info__social__item"><a href=""><i class="fab fa-instagram"></i></a></div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="footer__row__col__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43458.479086475745!2d37.51372247910155!3d47.09603310000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e335da0e7bc3%3A0x32c61dcd41c1b0bc!2z0JTRgNCw0LzRgtC10LDRgtGA!5e0!3m2!1sru!2sua!4v1641558788543!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            
+            <div class="footer__row__links__col__info__social">
+                <div class="footer__row__links__col__info__title">мы в социальных сетях</div>
+                <div class="footer__row__links__col__info__social__items">
+                    <div class="footer__row__links__col__info__social__item"><a href=""><i class="fab fa-viber"></i></a></div>
+                    <div class="footer__row__links__col__info__social__item"><a href=""><i class="fab fa-telegram-plane"></i></a></div>
+                    <div class="footer__row__links__col__info__social__item"><a href=""><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+            <!-- <div class="footer__row__col__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43458.479086475745!2d37.51372247910155!3d47.09603310000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e335da0e7bc3%3A0x32c61dcd41c1b0bc!2z0JTRgNCw0LzRgtC10LDRgtGA!5e0!3m2!1sru!2sua!4v1641558788543!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div> -->
         </div>
     </div>
 </footer>

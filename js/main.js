@@ -25213,6 +25213,17 @@ $(document).ready(function(){
   		]
 	});
 });
+if ($(window).width() < 640) {
+$(document).ready(function(){
+	$('.works__wraper').slick({
+		centerMode: true,
+		dots: true,
+		infinite: true,
+		speed: 100,
+		slidesToShow: 1
+	});
+});
+}
 /*
     jQuery Masked Input Plugin
     Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
@@ -25419,31 +25430,31 @@ window.lightGallery(document.getElementById('product__info__foto__col'), {
 // }); 
 
 
-const smolPhoto = document.querySelectorAll('.product__info__foto__col__img')
-// smolPhoto.forEach(photo => {
-// 	photo.addEventListener('mousemove', function(e){
-//         console.log(e)
-// 		document.getElementById('product__info__foto__col__preview').src = e.target.src;
-            
-// 	});
-// });
-
-
-smolPhoto.forEach(serv => {
-
-	serv.addEventListener('mousemove', function(e){
-		console.log(serv)
-        document.getElementById('product__info__foto__col__preview').src = serv.target.src;
+const smolPhoto = document.querySelectorAll('.product__info__foto__col__img__small')
+const shadow = document.querySelectorAll('.product__info__foto__col__img__small__shadow')
+smolPhoto.forEach(photo => {
+	photo.addEventListener('mouseover', function(e){
+        //  console.log(e.path[1].childNodes[3].getAttribute("data-id"));
+         shadow.forEach(shd =>{
+            if (e.path[1].childNodes[3].getAttribute("data-id") == shd.getAttribute("data-id")){
+                shd.classList.remove('shadow');
+            } else {
+                shd.classList.add('shadow');
+            }
+         })
+		document.getElementById('product__info__foto__col__preview').setAttribute('src', photo.childNodes[0].nextElementSibling.src);  
 	});
-
 });
 
-
-// document.body.onclick = function (event) {
-//     event = event || window.event;
-
-//     if (event.target.classList.contains('product__info__foto__col__img__img')) {
-//         console.log(document.getElementById('product__info__foto__col__preview').src)
-//         document.getElementById('product__info__foto__col__preview').src = event.target.src;
-//     }
-// }
+const preview = document.getElementById('product__info__foto__col__preview')
+if(preview){
+preview.addEventListener('click', function(e){
+    smolPhoto.forEach(photo => {
+        // console.log(preview.src)
+        // console.log(photo.childNodes[1].src)
+        if (preview.src == photo.childNodes[1].src) {
+            photo.childNodes[1].click()
+        }
+    })
+});
+}
