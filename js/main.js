@@ -25213,7 +25213,8 @@ $(document).ready(function(){
   		]
 	});
 });
-if ($(window).width() < 640) {
+$(window).on('resize', function() {
+	if ($(window).width() < 989) {
 $(document).ready(function(){
 	$('.works__wraper').slick({
 		centerMode: true,
@@ -25223,7 +25224,20 @@ $(document).ready(function(){
 		slidesToShow: 1
 	});
 });
-}
+};
+})
+
+if ($(window).width() < 989) {
+	$(document).ready(function(){
+		$('.works__wraper').slick({
+			centerMode: true,
+			dots: true,
+			infinite: true,
+			speed: 100,
+			slidesToShow: 1
+		});
+	});
+	};
 /*
     jQuery Masked Input Plugin
     Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
@@ -25457,4 +25471,14 @@ preview.addEventListener('click', function(e){
         }
     })
 });
+}
+
+const iconMenu = document.querySelector('.menu__icon');
+if (iconMenu){
+    const menuBody = document.querySelector('.menu__body');
+    iconMenu.addEventListener('click', function(e){
+        document.body.classList.toggle('_lock');
+        iconMenu.classList.toggle('_active');
+        menuBody.classList.toggle('_active');
+    })
 }
